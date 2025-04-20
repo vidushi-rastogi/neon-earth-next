@@ -1,3 +1,8 @@
+## Deployed Link: [Neon Earth](https://neon-earth-next.vercel.app/)
+
+#### Lighthouse Permformance
+![Screenshot 2025-04-20 222256](https://github.com/user-attachments/assets/863010f8-7878-4530-8143-1828c4409537)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

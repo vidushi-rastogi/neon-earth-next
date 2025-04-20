@@ -13,11 +13,9 @@ const Navbar = () => {
       <nav className="w-full bg-background border-b border-gray-200 top-0 left-0 right-0 z-50 py-2 md:py-3">
         <div className="container grid grid-cols-12 px-10 md:gap-8 ml-4 md:ml-0">
           <div className="col-span-10 md:col-span-3 flex justify-center md:justify-start">
-            <div className="my-auto">
-              <Link href="/" className="text-2xl font-bold text-primary">
-                <Image src="/logo.png" alt="Logo" width={175} height={175} />
-              </Link>
-            </div>
+            <Link href="/" className='my-auto'>
+              <Image src="/logo.png" alt="Logo" width={175} height={175} className='w-[180px] h-[32px]'/>
+            </Link>
           </div>
           <div className="hidden md:flex md:col-span-7">
             <div className="relative w-full my-auto rounded-md border-4 border-gray-200">
@@ -29,6 +27,7 @@ const Navbar = () => {
                 className="w-full px-4 py-3 rounded-md focus:outline-none focus:border-transparent"
               />
               <button
+                aria-label="search"
                 type="button"
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 text-secondary bg-primary p-[13px] rounded-r-md"
               >
@@ -64,6 +63,7 @@ const Navbar = () => {
             className="w-full px-4 py-3 rounded-md focus:outline-none focus:border-transparent"
           />
           <button
+            aria-label="search"
             type="button"
             className="absolute right-0 top-1/2 transform -translate-y-1/2 text-secondary bg-primary p-[13px] rounded-r-md"
           >

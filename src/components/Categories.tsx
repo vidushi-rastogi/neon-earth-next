@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Dropdown from "./ui/dropdown";
+import dynamic from "next/dynamic";
+
+const Dropdown = dynamic(() => import('./ui/dropdown'), { ssr: false });
 
 const menuItems = [
     "Custom Wall Paper",

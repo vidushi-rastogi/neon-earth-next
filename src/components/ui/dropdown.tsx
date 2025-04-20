@@ -12,7 +12,6 @@ const Dropdown: React.FC<DropdownProps> = ({ children, trigger, className = '' }
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [isHovering, setIsHovering] = useState(false);
   const [dropdownPosition, setDropdownPosition] = useState({ left: 0, top: 0 });
 
   useEffect(() => {
@@ -37,7 +36,7 @@ const Dropdown: React.FC<DropdownProps> = ({ children, trigger, className = '' }
     
     // Default position (left-aligned with trigger)
     let left = triggerRect.left;
-    let top = triggerRect.bottom;
+    const top = triggerRect.bottom;
     
     // Check if dropdown would overflow the right edge of the viewport
     if (left + contentRect.width > viewportWidth) {
@@ -49,14 +48,12 @@ const Dropdown: React.FC<DropdownProps> = ({ children, trigger, className = '' }
   };
 
   const handleMouseEnter = () => {
-    setIsHovering(true);
     setIsOpen(true);
     // Calculate position after a small delay to ensure content is rendered
     setTimeout(calculatePosition, 0);
   };
 
   const handleMouseLeave = () => {
-    setIsHovering(false);
     setIsOpen(false);
   };
 

@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="col-span-12 lg:col-span-4 flex flex-col gap-5">
                 <div className="text-lg font-semibold">Designs Come True!</div>
                 <div className="font-light leading-8">
-                    At the heart of Neon Earth lies the belief that your home is more than just a physical space; it's a canvas for self-expression. Neon Earth acts as an enabler, providing comfort, and the freedom to ‘Create Your New’. Visualize It - Design it - Bring It to life: because the final product belongs to you.
+                    At the heart of Neon Earth lies the belief that your home is more than just a physical space; it is a canvas for self-expression. Neon Earth acts as an enabler, providing comfort, and the freedom to Create Your New. Visualize It - Design it - Bring It to life: because the final product belongs to you.
                 </div>
             </div>
             <div className="col-span-12 lg:col-span-8 grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-0">
